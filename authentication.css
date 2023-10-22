@@ -135,18 +135,12 @@ button {
 /* Style for rounded-edge buttons */
 .rounded-button {
     padding: 10px 20px;
-    /* Adjust padding as needed */
     border-radius: 20px;
-    /* This creates rounded edges */
     background-color: #cddc39;
-    /* Change this to your desired background color */
     color: #fff;
-    /* Change this to your desired text color */
     font-size: 16px;
-    /* Adjust font size as needed */
     margin: 15px;
     margin-inline: 30px;
-    /* Add margin between buttons */
     width: 200px;
 }
 
@@ -157,11 +151,17 @@ button {
 }
 
 .first_section {
+    display: flex;
     background-color: #031953;
     height: 100vh;
     width: 100%;
     align-items: center;
     justify-items: center;
+
+}
+
+.first_section .image {
+    margin-left: 10%;
 }
 
 .background1 img {
@@ -172,8 +172,7 @@ button {
 .authentication-form {
     position: absolute;
     z-index: 3;
-    margin-left: 37%;
-    margin-top: 15%;
+    margin-left: 50%;
 
 }
 
