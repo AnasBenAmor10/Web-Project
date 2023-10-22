@@ -11,8 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -22,7 +21,7 @@
             <div class="logo"><a href="home.html"><img src="images/logo2 (2).png" class="nav-logo"></a></div>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="produit.html" class="nav-link">produits</a></li>
+                <li class="nav-item"><a href="produit.html" class="nav-link">products</a></li>
                 <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
                 <li class="nav-item"><a href="signup.html" class="nav-link">Signup</a></li>
                 <li class="nav-item"><a href="contactpage.html" class="nav-link">Contact</a></li>
@@ -44,6 +43,20 @@
                 <textarea id="message" name="message" required></textarea>
 
                 <button type="submit" value="Submit" id="button1" class="rounded-button">Submit</button>
+                <ul class="social-media-list">
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
             </form>
         </div>
     </section>
@@ -98,7 +111,6 @@
         var scrollTrigger = 5;
 
         window.onscroll = function () {
-            // We add pageYOffset for compatibility with IE.
             if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
                 document.getElementsByTagName("header")[0].classList.add(className);
             } else {

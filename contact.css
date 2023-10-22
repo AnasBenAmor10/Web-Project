@@ -138,25 +138,18 @@ button {
 /* Style for rounded-edge buttons */
 .rounded-button {
     padding: 10px 20px;
-    /* Adjust padding as needed */
     border-radius: 20px;
-    /* This creates rounded edges */
     background-color: #cddc39;
-    /* Change this to your desired background color */
     color: #fff;
-    /* Change this to your desired text color */
     font-size: 16px;
-    /* Adjust font size as needed */
     margin: 15px;
-    margin-inline: 30px;
-    /* Add margin between buttons */
+    margin-inline: 113px;
     width: 200px;
 }
 
 /* Hover effect */
 .rounded-button:hover {
     background-color: #0056b3;
-    /* Change this to a darker shade for hover effect */
 }
 
 .first {
@@ -174,13 +167,69 @@ button {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.3);
     width: 500px;
-    margin: 5% 70% 5% 34%;
-    margin-top: 8%;
-    padding: 50px;
+    margin: 5% 70% 0% 34%;
+    margin-top: 5%;
+    padding: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     z-index: 3;
 
+}
+
+/* Social Media Icons */
+.social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-media-list li a {
+    color: #fff;
+}
+
+.social-media-list li {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+    background-color: #fff;
+}
+
+.social-media-list li:hover:after {
+    opacity: 1;
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-media-list li:hover a {
+    color: #000;
 }
 
 h1 {
