@@ -109,37 +109,12 @@
         var scrollTrigger = 5;
 
         window.onscroll = function () {
-            // We add pageYOffset for compatibility with IE.
             if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
                 document.getElementsByTagName("header")[0].classList.add(className);
             } else {
                 document.getElementsByTagName("header")[0].classList.remove(className);
             }
         };
-        //humbergernav
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector(".nav-menu");
-
-        hamburger.addEventListener("click", mobileMenu);
-
-        function mobileMenu() {
-            document.getElementsByTagName("header")[0].classList.toggle("active");
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
-
-            const navLink = document.querySelectorAll(".nav-link");
-
-            navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-            function closeMenu() {
-                hamburger.classList.remove("active");
-                navMenu.classList.remove("active");
-
-            }
-        }
-        //animation
-        AOS.init();
-
     }
 
 

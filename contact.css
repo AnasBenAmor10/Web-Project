@@ -271,25 +271,18 @@ button {
 /* Style for rounded-edge buttons */
 .rounded-button {
     padding: 10px 20px;
-    /* Adjust padding as needed */
     border-radius: 20px;
-    /* This creates rounded edges */
     background-color: #cddc39;
-    /* Change this to your desired background color */
     color: #fff;
-    /* Change this to your desired text color */
     font-size: 16px;
-    /* Adjust font size as needed */
     margin: 15px;
     margin-inline: 30px;
-    /* Add margin between buttons */
     width: 200px;
 }
 
 /* Hover effect */
 .rounded-button:hover {
     background-color: #0056b3;
-    /* Change this to a darker shade for hover effect */
 }
 
 /**************************************footer******************************/
