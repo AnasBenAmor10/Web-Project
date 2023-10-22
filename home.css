@@ -193,7 +193,6 @@ article a::after {
     content: "";
 }
 
-/* basic article elements styling */
 article h2 {
     margin: 0 0 18px 0;
     font-family: "Bebas Neue", cursive;
@@ -241,7 +240,6 @@ article a .icon {
     transition: all 0.3s;
 }
 
-/* using the has() relational pseudo selector to update our custom properties */
 article:has(:hover, :focus) {
     --img-scale: 1.1;
     --title-color: #28666e;
